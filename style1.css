@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: "Roboto","Arial",sans-serif;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    padding: 0 16px;
+}
+.left-section{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.left-section img {
+    width: 46%;
+    padding-left: 16px;
+}
+.mid-section {
+    display: flex;
+    align-items: center;
+    margin-left: -9%;
+}
+.mid-section form {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 628px;
+}
+.mid-section input{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px 0 0 25px;
+    padding: 12px;
+    font-size: 1.6rem;
+    border: 1px solid #d3d3d3;
+    border-right: none;
+    
+}
+.mid-section button {
+    height: 100%;
+    border-radius: 0 25px 25px 0;
+    border: 1px solid #d3d3d3;
+    
+    width: 66px;
+    margin-right: 10px;
+    padding-top: 4px;
+    background-color: #F8F8F8;
+    cursor: pointer;
+   
+}
+.mid-section button:hover{
+    border-color: #c6c6c6;
+    background-color: #f0f0f0;
+}
+
+.mid-section .mic{
+    cursor: pointer;
+    transition: 0.4s ease;
+
+}
+.mid-section .mic:hover{
+    font-size: 40px;
+    background-color: #f9f9f9;
+    border-radius: 50%;
+}
+.right-section a{
+    padding-right: 18px;
+    text-decoration: none;
+    color: black;
+}
+.content-area{
+    height: calc(100vh - 56px);
+    display: flex;
+    background-color: #f9f9f9;
+}
+aside{
+    height: 100%;
+    width: 280px;
+    background-color: white;
+    overflow-y: auto;
+}
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    padding-right: 15px;
+}
+.nav-live{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 16px;
+    
+    color: black;
+}
+.nav-live:hover{
+    background-color: #e5e5e5;
+}
+.nav-live span{
+    margin-left: 24px;
+    font-size: 1.4rem;
+    line-height: 2em;
+    font-weight: 400;
+    color: #030303;
+}
+.active1{
+    background-color: #e5e5e5;
+}
+#active-spane1{
+    font-weight: 500;
+}
+.sub{
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #606060;
+    padding: 8px 16px;
+}
+.rayen-img{
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+}
+main{
+    height: 100%;
+    width: 100%;
+    padding: 35px 15px;
+    border-top: 1px solid #ddd;
+    overflow-y: auto;
+}
+.vid-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.video{
+    width: 330px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.thumbnail{
+    width: 100%;
+    height: 187px;
+    margin-bottom: 12px;
+}
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.video-details{
+    display: flex;
+    
+
+}
+.creator-img img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    
+}
+.title a {
+    text-decoration: none;
+    color: black;
+}
+.video-title{
+    font-size: 1.6rem;
+    max-width: 278px;
+    font-weight: 500;
+    line-height: 2.2rem;
+    margin-bottom: 4px;
+    overflow: hidden;
+    
+}
+.video-creator, .title span {
+    color: rgb(96, 96, 96);
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+.video-creator:hover{
+    color: black;
+}
+@media (max-width:1023px){
+    aside{
+        width: 140px;
+    }
+    nav{
+        margin: 7px 0;
+        padding-right: 7px;
+
+    }
+    .nav-live{
+        padding: 4px 8px;
+    }
+    .nav-live span{
+        margin-left: 12px;
+        font-size: 0.7rem;
+        line-height: 1em;
+        font-weight: 300;
+        
+    }
+    .sub{
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        font-weight: 5000;
+        padding: 4px 8px;
+    }
+    .mid-section form {
+        
+        height: 20px;
+     
+        width: 150px;
+    }
+    header{
+        
+        height: 25px;
+        padding: 0 8px;
+    }
+    .left-section img {
+        width: 46%;
+        padding-left: 8px;
+    }
+    .mid-section input{
+        width: 100%;
+        height: 100%;
+        border-radius: 12px 0 0 12px;
+        padding: 6px;
+        font-size: 0.8rem;
+        border: 1px solid #d3d3d3;
+        border-right: none;
+        
+    }
+    .mid-section button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        border-radius: 0 12px 12px 0;
+        border: 1px solid #d3d3d3;
+        
+        width: 33px;
+        margin-right: 5px;
+        padding-top: 2px;
+        background-color: #F8F8F8;
+        cursor: pointer;
+       
+    }
+    .right-section {
+        display: flex;
+        flex-direction: row;
+
+
+        
+    }
+    .right-section a{
+        padding-right: 5px;
+        font-size: 0.7rem;
+        
+    }
+    .video{
+        width: 80px;
+        margin-bottom: 5px;
+        cursor: pointer;
+    }
+    .thumbnail{
+        width: 100%;
+        height: 130px;
+        margin-bottom: 6px;
+    }
+    .creator-img img{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin-right: 12px;
+    }
+    .video-title{
+        font-size: 0.8rem;
+        max-width: 140px;
+        font-weight: 400;
+        line-height: 1rem;
+        margin-bottom: 2px;
+        overflow: hidden;
+        
+    }
+    .video-creator, .title span {
+        color: rgb(96, 96, 96);
+        font-size: 0.7rem;
+        line-height: 1rem;
+        font-weight: 300;
+    }
+    
+}
